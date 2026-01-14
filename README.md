@@ -59,8 +59,3 @@ Random Forest and XGBoost produce the best results (Test R² ≈ 0.9986). Random
 - The extremely high R² scores for tree-based models suggest careful validation for data leakage is required (ensure no feature directly encodes the target or deterministic transformations that leak target information).
 - LSTM was included for comparison; it is not the best fit for this tabular (non-sequential) dataset.
 - Consider time-based validation, cross-validation, and hyperparameter tuning before deployment.
-
-## Suggested improvements
-- Add `requirements.txt` and `environment.yml` to lock dependencies.
-- Add unit tests and data-leakage checks.
-- Save trained models and preprocessing artifacts (scalers, feature lists) for production inference.
